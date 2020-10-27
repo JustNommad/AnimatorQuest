@@ -6,6 +6,8 @@ using UnityEngine;
 public class QuestScript : MonoBehaviour
 {
     private Animator _animator;
+    private int _speedTrigger = Animator.StringToHash("Speed");
+    private int _crouchTrigger = Animator.StringToHash("Crouch");
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -13,7 +15,7 @@ public class QuestScript : MonoBehaviour
     
     void Update()
     {
-        _animator.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-        _animator.SetBool("Crouch", Input.GetKey(KeyCode.C));
+        _animator.SetFloat(_speedTrigger, Mathf.Abs(Input.GetAxis("Horizontal")));
+        _animator.SetBool(_crouchTrigger, Input.GetKey(KeyCode.C));
     }
 }
