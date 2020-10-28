@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameCode\GunScript.cs" />
+     <Compile Include="Assets\GameCode\MoveBehaviour.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/maximkr/Unity Projects/Anim/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
